@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:vacancy_app/reusablewidgets/neomorphism_widget.dart';
 import 'package:vacancy_app/screens/detailscreen/detail_screen.dart';
+import 'package:vacancy_app/screens/summaryscreen/summary_screen.dart';
 import 'package:vacancy_app/theme/theme.dart';
 import 'package:vacancy_app/utils/constants.dart';
 
@@ -23,16 +24,19 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppTheme.whiteColor,
       appBar: AppBar(
-        // actions: [
-        //   GestureDetector(
-        //     onTap: () async {
-        //       var data = await fetchFirestoreData('vacancies');
-        //       await generatePdf(data);
-        //     },
-        //     child: const Icon(Icons.download),
-        //   )
-        // ],
-       
+      
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SummaryScreen(),
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.summarize))
+          ],
         centerTitle: true,
         title: Text(
               'Current Manpower Status and Vacancy Overview',
