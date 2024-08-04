@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:vacancy_admin/theme/theme.dart';
+import 'package:vacancy_app/theme/theme.dart';
 
 class SummaryScreen extends StatelessWidget {
   const SummaryScreen({super.key});
