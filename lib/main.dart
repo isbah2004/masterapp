@@ -4,7 +4,6 @@ import 'package:vacancy_app/provider/auth_provider.dart';
 import 'package:vacancy_app/provider/home_index_provider.dart';
 import 'package:vacancy_app/provider/password_visibility_provider.dart';
 import 'package:vacancy_app/provider/upload_provider.dart';
-import 'package:vacancy_app/screens/homescreen/home_screen.dart';
 import 'package:vacancy_app/screens/splashscreen/splash_screen.dart';
 import 'package:vacancy_app/theme/theme.dart';
 import 'package:provider/provider.dart';
